@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tango - Live Streaming Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="tango-logo">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M15 2L8 8L15 14L22 8L15 2Z" fill="#FF2D55"/>
+                <path d="M8 12L2 18L8 24L8 12Z" fill="#FF2D55"/>
+                <path d="M22 12L22 24L28 18L22 12Z" fill="#FF2D55"/>
+              </svg>
+              <span>tango</span>
+            </div>
+          </a>
+          <div class="navbar-nav ms-auto d-flex flex-row align-items-center">
+            <a class="nav-link" href="#"><i class="bi bi-camera-video"></i> Livestreams</a>
+            <a class="nav-link" href="#"><i class="bi bi-trophy"></i> Leaderboard</a>
+            <a class="nav-link" href="#"><i class="bi bi-controller"></i> Games</a>
+            <button class="btn-menu" id="menuBtn">
+              <i class="bi bi-three-dots-vertical"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="menu-dropdown" id="menuDropdown">
+        <div class="menu-item">About</div>
+        <div class="menu-item">Tango's Agencies Program</div>
+        <div class="menu-item">Tango's Resellers Program</div>
+        <div class="menu-item">Help Center</div>
+        <div class="menu-item">Legal Information</div>
+      </div>
+
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">Connect Live, Now!</h1>
+          <p class="hero-subtitle">Chat and engage with real people - just one click away.</p>
+
+          <div class="auth-buttons">
+            <button class="btn-auth btn-email" id="emailBtn">
+              <i class="bi bi-envelope"></i>
+              Continue with Email
+            </button>
+            <span class="or-divider">OR</span>
+            <div class="social-auth">
+              <button class="btn-social btn-google" id="googleBtn">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <path fill="#4285F4" d="M19.6 10.23c0-.82-.1-1.42-.25-2.05H10v3.72h5.5c-.15.96-.74 2.31-2.04 3.22v2.45h3.16c1.89-1.73 2.98-4.3 2.98-7.34z"/>
+                  <path fill="#34A853" d="M13.46 15.13c-.83.59-1.96 1-3.46 1-2.64 0-4.88-1.74-5.68-4.15H1.07v2.52C2.72 17.75 6.09 20 10 20c2.7 0 4.96-.89 6.62-2.42l-3.16-2.45z"/>
+                  <path fill="#FBBC05" d="M3.99 10c0-.69.12-1.35.32-1.97V5.51H1.07A9.973 9.973 0 000 10c0 1.61.39 3.14 1.07 4.49l3.24-2.52c-.2-.62-.32-1.28-.32-1.97z"/>
+                  <path fill="#EA4335" d="M10 3.88c1.88 0 3.13.81 3.85 1.48l2.84-2.76C14.96.99 12.7 0 10 0 6.09 0 2.72 2.25 1.07 5.51l3.24 2.52C5.12 5.62 7.36 3.88 10 3.88z"/>
+                </svg>
+              </button>
+              <button class="btn-social btn-phone" id="phoneBtn">
+                <i class="bi bi-phone"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trending-section">
+        <div class="trending-header">
+          <i class="bi bi-fire"></i>
+          <span>Trending Now</span>
+        </div>
+        <div class="livestream-carousel">
+          <div class="livestream-card">
+            <span class="live-badge">LIVE</span>
+            <img src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Streamer">
+            <div class="streamer-info">
+              <div class="streamer-name">Ap 💗 🌸</div>
+              <div class="viewer-count"><i class="bi bi-eye"></i> 695 viewers</div>
+            </div>
+          </div>
+          <div class="livestream-card">
+            <span class="live-badge">LIVE</span>
+            <img src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&w=200" alt="Streamer">
+            <div class="streamer-info">
+              <div class="streamer-name">MEER 🔥💎</div>
+              <div class="viewer-count"><i class="bi bi-eye"></i> 582 viewers</div>
+            </div>
+          </div>
+          <div class="livestream-card">
+            <span class="live-badge">LIVE</span>
+            <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Streamer">
+            <div class="streamer-info">
+              <div class="streamer-name">⭐️ 👑 Elina 👑 🔮</div>
+              <div class="viewer-count"><i class="bi bi-eye"></i> 651 viewers</div>
+            </div>
+          </div>
+          <div class="livestream-card">
+            <span class="live-badge">LIVE</span>
+            <img src="https://images.pexels.com/photos/3779453/pexels-photo-3779453.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Streamer">
+            <div class="streamer-info">
+              <div class="streamer-name">💎 Heer 💎</div>
+              <div class="viewer-count"><i class="bi bi-eye"></i> 484 viewers</div>
+            </div>
+          </div>
+          <div class="livestream-card">
+            <span class="live-badge">LIVE</span>
+            <img src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Streamer">
+            <div class="streamer-info">
+              <div class="streamer-name">👑 RANJEET 👑</div>
+              <div class="viewer-count"><i class="bi bi-eye"></i> 886 viewers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="emailModal">
+      <div class="modal-content">
+        <button class="modal-close" id="closeEmailModal">&times;</button>
+        <h2>Continue with Email</h2>
+        <p class="modal-subtitle">Enter your email and password to continue</p>
+        <form id="emailForm">
+          <input type="email" class="form-input" placeholder="Email" required>
+          <input type="password" class="form-input" placeholder="Password" required>
+          <p class="password-hint">Password must be at least 8 characters long and include a number and a special character</p>
+          <a href="#" class="forgot-link">Forgot password?</a>
+          <button type="submit" class="btn-continue">Continue</button>
+        </form>
+        <p class="terms-text">By logging in, you confirm you're over 18 years old and agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+
+    <div class="modal" id="phoneModal">
+      <div class="modal-content">
+        <button class="modal-close" id="closePhoneModal">&times;</button>
+        <h2>Continue with phone</h2>
+        <p class="modal-subtitle">You'll receive a verification code at this number</p>
+        <form id="phoneForm">
+          <div class="phone-input-group">
+            <div class="country-selector">
+              <span class="flag">🇮🇳</span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+            <input type="tel" class="form-input phone-input" placeholder="+91 Phone Number" required>
+          </div>
+          <button type="submit" class="btn-continue">Continue</button>
+        </form>
+        <p class="terms-text">By logging in, you confirm you're over 18 years old and agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+
+    <div class="modal" id="googleModal">
+      <div class="modal-content">
+        <button class="modal-close" id="closeGoogleModal">&times;</button>
+        <h2>Continue with Google</h2>
+        <p class="modal-subtitle">Sign in with your Google account</p>
+        <div class="google-signin-placeholder">
+          <div class="google-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48">
+              <path fill="#4285F4" d="M47.04 24.552c0-1.968-.176-3.408-.6-4.896H24v8.928h13.2c-.264 2.304-1.776 5.544-4.896 7.728v5.88h7.584c4.536-4.152 7.152-10.32 7.152-17.64z"/>
+              <path fill="#34A853" d="M32.304 36.264c-1.992 1.416-4.704 2.4-8.304 2.4-6.336 0-11.712-4.176-13.632-9.96H2.568v6.048C6.528 42.6 14.616 48 24 48c6.48 0 11.904-2.136 15.888-5.808l-7.584-5.928z"/>
+              <path fill="#FBBC05" d="M9.576 24c0-1.656.288-3.24.768-4.728v-6.048H2.568A23.928 23.928 0 000 24c0 3.864.936 7.536 2.568 10.752l7.776-6.048c-.48-1.464-.768-3.048-.768-4.704z"/>
+              <path fill="#EA4335" d="M24 9.312c4.512 0 7.512 1.944 9.24 3.552l6.816-6.624C35.904 2.376 30.48 0 24 0 14.616 0 6.528 5.4 2.568 13.224l7.776 6.048C12.288 13.488 17.664 9.312 24 9.312z"/>
+            </svg>
+          </div>
+          <p>Google Sign-In would open here</p>
+          <p class="demo-note">(Demo Mode - Click Continue to proceed)</p>
+          <button class="btn-continue" id="googleContinue">Continue</button>
+        </div>
+        <p class="terms-text">By logging in, you confirm you're over 18 years old and agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
